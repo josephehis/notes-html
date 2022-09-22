@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="notemanager.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+   
+    <div id="noteManager">
+
+        <header id="header">
+            <h1>Note Manager</h1>
+            <form>
+                <input type="text" class="inputs" id="searchInput" placeholder=" Search Notes">
+            </form>
+        </header>
+
+        <main id="content">
+            
+            <ul id="notes">
+
+                <li class="noteList">
+
+                    <p class='list-content'>first note</p>
+
+                    <div class="icons">
+                        <span>
+                            <button class="cancel"><i class="fa fa-window-close" id="icon1"></i></button>
+                            <button class="edit"> <i class="fa fa-edit"></i></button>
+                        </span>
+                    </div>
+
+                    <input type="text" class="editNote">
+                    
+                </li>
+                
+                <li class="noteList">
+
+                    <p class='list-content'>Second note</p>
+
+                    <div class="icons">
+                        <span>
+                            <button class="cancel"><i class="fa fa-window-close" id="icon1"></i></button>
+                            <button class="edit"> <i class="fa fa-edit"></i></button>
+                        </span>
+                    </div>
+
+                    <input type="text" class="editNote">
+                    
+                </li>
+
+            </ul>
+
+            
+            <button class="button" id="hideButton">Hide Notes</button>
+
+            <form id="createNote">
+
+                <input type="text" class="inputs" placeholder=" Add a note" id="noteInput">
+                <button class="button" id="noteButton"> Add</button>
+            </form>
+        
+        </main>
+
+    </div>
+    
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/notes.js"></script>
+</body>
+
+</html>
